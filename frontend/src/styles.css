@@ -4,3 +4,11 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
+
+.ng-invalid:not(form) {
+  border-left: 5px solid red;
+}
+
+.ng-valid:not(form) {
+  border-left: 5px solid green;
+}
