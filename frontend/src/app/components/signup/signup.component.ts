@@ -15,7 +15,7 @@ export class SignupComponent implements OnInit {
     password_confirmation: null
   };
 
-  public error = null;
+  public error = [ ];
 
   constructor(private http: HttpClient) { }
 
@@ -28,7 +28,7 @@ export class SignupComponent implements OnInit {
   }
 
   handleError(error) {
-    this.error = error.error.error;
+    this.error = error.error.errors;
   }
 
   ngOnInit() {
